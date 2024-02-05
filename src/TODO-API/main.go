@@ -1,8 +1,8 @@
 package main
 
 import (
-	"TODO-API/structs"
 	"encoding/json"
+	"https://github.com/azeemakhtar/golang/tree/main/src/TODO-API/structs"
 	"net/http"
 )
 
