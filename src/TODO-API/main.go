@@ -4,14 +4,14 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/azeemakhtar/golang/src/TODO-API/structs"
+	views "command-line-arguments/Users/azeemakhtar/golang/src/TODO-API/view/structs.go"
 )
 
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodGet {
-			data := structs.Response{
+			data := views.Response{
 				Code: http.StatusOK,
 				Body: "pong",
 			}
