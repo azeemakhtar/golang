@@ -2,8 +2,9 @@ package main
 
 import (
 	"encoding/json"
-	"https://github.com/azeemakhtar/golang/tree/main/src/TODO-API/structs"
 	"net/http"
+
+	"github.com/azeemakhtar/golang/src/TODO-API/structs"
 )
 
 func main() {
