@@ -1,13 +1,11 @@
-package controller
+package control
 
 import (
-	"encoding/json"
 	"net/http"
-	"github.com/" // Add the import statement for the package that contains the Registered function
 )
 
-func main() {
-	mux := package.Registered() // Call the Registered function from the imported package
-
-	http.ListenAndServe(":3000", mux)
+func Register() *http.ServeMux {
+	mux := http.NewServeMux()
+	mux.HandleFunc("/ping", ping())
+	return mux
 }
