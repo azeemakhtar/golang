@@ -1,11 +1,15 @@
 package main
 
-import "net/http"
+import (
+	"fmt"
+	"net/http"
+)
 
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Println("Request received")
 		w.Write([]byte("Hello, World!"))
 	})
-	http.ListenAndServe("localhost:3000", mux)
+	http.ListenAndServe(":3000", mux)
 }

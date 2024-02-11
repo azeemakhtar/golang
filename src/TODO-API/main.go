@@ -1,7 +1,7 @@
 package main
 
 import (
-	controller "command-line-arguments/Users/azeemakhtar/golang/src/TODO-API/control/rout.go"
+	controller "/Users/azeemakhtar/golang/src/TODO-API/control/rout.go"
 	"net/http"
 )
 
