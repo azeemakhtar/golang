@@ -1,10 +1,9 @@
 package main
 
 import (
+	"command-line-arguments/Users/azeemakhtar/golang/src/TODO-API/structs/structs.go"
 	"encoding/json"
 	"net/http"
-
-	"./golang/src/TODO-API/structs/structs.go"
 )
 
 func main() {
