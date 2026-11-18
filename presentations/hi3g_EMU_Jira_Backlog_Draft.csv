@@ -1,0 +1,191 @@
+﻿Project Key,Issue Type,Summary,Description,Priority,Labels,Story Points,Epic Link
+CPF,Task,"Appoint sponsor, delivery lead and workstream owners","Workstream: Mobilize and governance
+
+Confirm accountable sponsor and named owners for GitHub, Entra/AD, OpenShift/Actions, security, procurement, communications and six organizations. Record decision rights and escalation path.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,2,CPF-370
+CPF,Task,Confirm EMU enterprise and coexistence commercial terms,"Workstream: Mobilize and governance
+
+Obtain written confirmation of EMU entitlement, transition coexistence, duplicate seat exposure, Copilot assignment/billing, migration support and any service charges. Acceptance: commercial assumptions approved by sponsor/procurement.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,3,CPF-370
+CPF,Task,"Approve scope, change windows and migration governance","Workstream: Mobilize and governance
+
+Approve six organizations, 220+ repositories, GHES exclusion, change controls, freeze policy, cutover authority, rollback owner and retention approach.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,2,CPF-370
+CPF,Task,Export organization and repository inventory,"Workstream: Discovery and inventory
+
+Inventory repositories across all six organizations: names, size, visibility, activity, branches, teams, direct grants, owners, collaborators, forks and archive status. Reconcile count with source.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Inventory GitHub Actions and deployment dependencies,"Workstream: Discovery and inventory
+
+Inventory workflows, schedules, reusable workflows, actions, runner labels/groups, secrets, variables, environments, approvals, artifacts, caches and deployment targets. Identify production critical paths.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Inventory GitHub integrations and data gaps,"Workstream: Discovery and inventory
+
+Inventory Apps/installations, webhooks, deploy keys, packages, LFS, Pages, Projects, Discussions, rulesets, branch protections, audit retention and outside integrations. Record GEI exclusions and remediation owner.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,5,CPF-370
+CPF,Task,Build cross-organization dependency map,"Workstream: Discovery and inventory
+
+Identify references to source orgs/repositories in CODEOWNERS, reusable workflows, actions, submodules, packages, API calls, bots, cloud OIDC trust and documentation. Propose migration ordering.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Classify repositories and approve destination name map,"Workstream: Discovery and inventory
+
+Classify every repository simple/moderate/complex and business criticality; identify LFS/large data. Approve target organization/repository naming and URL change treatment.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,3,CPF-370
+CPF,Task,Create and secure EMU enterprise recovery account,"Workstream: EMU and Entra foundation
+
+Provision destination EMU enterprise through approved GitHub process. Secure setup account with 2FA, recovery codes and vaulted credentials; assign least-privilege operational owners.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,3,CPF-370
+CPF,Task,Approve Entra authentication and identity mapping design,"Workstream: EMU and Entra foundation
+
+Choose OIDC if tenant constraints permit, otherwise SAML. Approve stable identity attribute, username normalization/collision handling, corporate domain rules, contractor policy and recovery access.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Configure Entra authentication for EMU,"Workstream: EMU and Entra foundation
+
+Configure selected Entra authentication integration in non-production readiness sequence. Validate login, Conditional Access behavior, session, admin recovery and authentication failure handling.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Configure SCIM provisioning and test lifecycle,"Workstream: EMU and Entra foundation
+
+Configure SCIM from Entra to EMU. Test create, attribute update, disable/offboard, reactivation and failed-provisioning alerts with test cohort; document rollback.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Validate Entra group structure for EMU synchronization,"Workstream: EMU and Entra foundation
+
+Confirm all relevant access groups are supported direct-membership Entra security groups; resolve nested/M365 group dependencies and document group owners.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,3,CPF-370
+CPF,Task,Design Entra group to GitHub team to repository role matrix,"Workstream: Access model
+
+Map each group to flat GitHub team(s), organization, repositories and least-privilege roles. Identify privileged exceptions and receive application-owner approval.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,8,CPF-370
+CPF,Task,Configure organization defaults and repository governance,"Workstream: Access model
+
+Set base permission None and private-by-default target. Define approved exceptions, organization owners, enterprise policies, Actions policy and audit evidence.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,5,CPF-370
+CPF,Task,Implement and test team synchronization,"Workstream: Access model
+
+Create/link teams to approved Entra groups after removing conflicting manual membership. Test onboarding, group removal, duplicate grants and organization membership behavior.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Automate repository access reconciliation tests,"Workstream: Access model
+
+Create a repeatable positive/negative access test for representative roles and repositories. Acceptance: assigned users can access; unassigned users cannot; privileged exceptions are documented.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,5,CPF-370
+CPF,Task,Assess existing OpenShift ARC and GHES runner topology,"Workstream: OpenShift ARC
+
+Record OpenShift, ARC/chart, GHES versions, CRDs, controllers, watch scope, namespaces, SCC, service accounts, node capacity, network and current workflows. Identify shared-resource risks.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Design isolated GitHub.com ARC coexistence,"Workstream: OpenShift ARC
+
+Design supported Autoscaling Runner Sets for GitHub.com without changing GHES runner registrations. Define controller/CRD ownership, namespaces, runner groups, GitHub App permissions, egress and trust boundaries.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Build GitHub.com runner images and OpenShift security configuration,"Workstream: OpenShift ARC
+
+Prepare runner images, tools, CA/proxy, registry access, UID/SCC compatibility, pod templates, non-privileged build model, quotas and log collection.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,8,CPF-370
+CPF,Task,Deploy and validate GitHub.com ARC runner scale sets,"Workstream: OpenShift ARC
+
+Deploy canary scale set(s), validate registration, workflow routing, ephemeral cleanup, concurrency, artifacts, service containers, build needs and deployment approval. Demonstrate GHES regression check.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,8,CPF-370
+CPF,Task,Set up GEI migration permissions and operator controls,"Workstream: Migration engineering
+
+Create least-privilege source/destination migration operator access. Secure and rotate required credentials; validate GEI CLI and migration logs without exposing secrets.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,3,CPF-370
+CPF,Task,Create migration gap register and remediation runbooks,"Workstream: Migration engineering
+
+For all assets excluded from GEI, assign remediation and evidence: secrets, variables, environments, runners, Apps, webhooks, rulesets, LFS, packages, artifacts, Projects/Discussions and audit retention.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Rehearse representative repository and organization migrations,"Workstream: Migration engineering
+
+Run trial migration(s) for simple, Actions-heavy, LFS/package and production patterns. Record errors, elapsed times, access reconstruction and target validation evidence.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,8,CPF-370
+CPF,Task,Prepare cutover and rollback runbooks,"Workstream: Migration engineering
+
+Document freeze, job drain, GEI execution, restoration, validation, trigger handoff, user comms, rollback deadline and post-target-write reconciliation. Conduct tabletop rehearsal.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Prepare managed-user developer and IDE transition guide,"Workstream: Developer readiness
+
+Document Entra sign-in, Git credential/CLI/IDE account switching, remotes, SSH/signing key re-registration, package access and support route. Validate with pilot developers.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Medium,emu-entra-migration,3,CPF-370
+CPF,Task,Reassign and validate Copilot for managed identities,"Workstream: Developer readiness
+
+Coordinate seat reassignment and commercial treatment with GitHub. Verify target managed account assignment, IDE sign-in and policy for representative users.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,3,CPF-370
+CPF,Task,Prepare pilot organization and user cohort,"Workstream: Pilot
+
+Select small but representative organization; map repositories/dependencies, provision managed users and groups, prebuild runner capacity and confirm business owner acceptance criteria.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,3,CPF-370
+CPF,Task,Execute pilot organization production migration,"Workstream: Pilot
+
+Execute approved freeze, GEI import, gap remediation, access/Actions/deployment validation, trigger handoff and user communications. Record evidence and issues.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,8,CPF-370
+CPF,Task,Complete pilot hypercare and go/no-go review,"Workstream: Pilot
+
+Monitor pilot 3-5 business days; reconcile inventory, access, workflows, deployments, Copilot and GHES runner health. Resolve P1/P2 issues and obtain sponsor approval for rollout.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Migrate production organization wave 1,"Workstream: Production waves
+
+Migrate next-lowest-complexity organization using approved runbook; reconcile repositories and validate workflows, access, integrations and rollback record.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,5,CPF-370
+CPF,Task,Migrate production organization wave 2,"Workstream: Production waves
+
+Migrate dependency-ready organization; co-migrate or update shared workflow/action dependencies; complete owner sign-off.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,5,CPF-370
+CPF,Task,Migrate production organization wave 3,"Workstream: Production waves
+
+Migrate medium/high-complexity organization in reserved window; validate LFS/packages/integrations and production paths.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,8,CPF-370
+CPF,Task,Migrate production organization wave 4,"Workstream: Production waves
+
+Migrate higher-complexity organization with dedicated rehearsal, extended support and application owner validation.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,8,CPF-370
+CPF,Task,Migrate production organization wave 5 and residual exceptions,"Workstream: Production waves
+
+Migrate final organization; reconcile remaining cross-org dependencies and formally accept or remediate approved exceptions.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,8,CPF-370
+CPF,Task,Run enterprise-wide access and repository reconciliation,"Workstream: Hypercare and closure
+
+Reconcile all six target organizations against approved inventory and access matrix. Confirm assigned-only visibility, group-driven offboarding and documented privileged exceptions.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Highest,emu-entra-migration,5,CPF-370
+CPF,Task,Close migration issues and approve source retention/retirement,"Workstream: Hypercare and closure
+
+Close or formally accept migration gaps; set source read-only retention; revoke obsolete credentials only after acceptance; reconcile GHES and Copilot operations.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",High,emu-entra-migration,5,CPF-370
+CPF,Task,Obtain sponsor and service-owner closure approval,"Workstream: Hypercare and closure
+
+Present completion evidence, residual risk, operating ownership, cost reconciliation and lessons learned. Obtain sponsor, security and service-owner sign-off.
+
+Definition of done: evidence is stored in the project workspace; affected owner approves; risks, dependencies and operational documentation are updated.",Medium,emu-entra-migration,2,CPF-370
